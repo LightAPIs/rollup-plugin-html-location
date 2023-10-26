@@ -1,0 +1,51 @@
+{
+  "name": "rollup-plugin-html-location",
+  "type": "module",
+  "private": false,
+  "version": "0.1.0",
+  "description": "Specify the output location of the html entry file",
+  "author": "Light",
+  "license": "MIT",
+  "homepage": "https://github.com/LightAPIs/rollup-plugin-html-location",
+  "repository": "LightAPIs/rollup-plugin-html-location",
+  "main": "./index.js",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "tsx ./build.ts",
+    "test": "mocha"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "rollup-plugin",
+    "html",
+    "location"
+  ],
+  "publishConfig": {
+    "directory": "publish"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.52.0",
+    "mocha": "^10.2.0",
+    "rollup": "^4.1.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.1"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
