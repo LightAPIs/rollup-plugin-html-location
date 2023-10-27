@@ -12,6 +12,14 @@ export default defineConfig({
       name: 'HTMLLocation',
       fileName: 'index',
     },
+    rollupOptions: {
+      external: ['chalk'],
+      output: {
+        globals: {
+          chalk: 'chalk',
+        },
+      },
+    },
   },
   resolve: {
     alias: {

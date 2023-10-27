@@ -2,7 +2,7 @@
   "name": "rollup-plugin-html-location",
   "type": "module",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Specify the output location of the html entry file",
   "author": "Light",
   "license": "MIT",
