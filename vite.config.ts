@@ -7,13 +7,14 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   build: {
     outDir: 'publish',
+    target: ['node16'],
     lib: {
       entry: './src/index.ts',
       name: 'HTMLLocation',
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['chalk'],
+      external: ['chalk', /^node:\w+/],
       output: {
         globals: {
           chalk: 'chalk',
