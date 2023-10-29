@@ -26,7 +26,7 @@ Assuming the project structure is as follows:
 └─...
 ```
 
-### When whthout plugin
+### When without plugin
 
 ```javascript
 // rollup.config.js
@@ -56,7 +56,7 @@ export default {
 └─...
 ```
 
-### Whth plugin
+### With plugin
 
 #### `dir` option
 
